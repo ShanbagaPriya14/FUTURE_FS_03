@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Swiggy Rebranding</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <h2>Swiggy 🍴</h2>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="offers.html">Offers</a></li>
+    <li><a href="cart.html">Cart</a></li>
+    <li><a href="help.html">Help</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Order food from your favourite restaurants</h1>
+  <p>Fast • Fresh • AI Powered</p>
+</section>
+
+<!-- FOOD LIST -->
+<section class="foods">
+
+<!-- INDIAN -->
+<div class="card"><img src="images/chicken_briyani.jpg"><h3>Chicken Biryani</h3><p>₹250</p><select id="q1"><option>1</option><option>2</option><option>3</option></select><button onclick="addToCart('Chicken Biryani',250,'q1')">Add</button></div>
+<div class="card"><img src="images/paneer_butter _masala.jpg"><h3>Paneer Butter Masala</h3><p>₹220</p><select id="q2"><option>1</option><option>2</option><option>3</option></select><button onclick="addToCart('Paneer Butter Masala',220,'q2')">Add</button></div>
+<div class="card"><img src="images/rajma_chawal.jpg"><h3>Rajma Chawal</h3><p>₹180</p><select id="q3"><option>1</option><option>2</option><option>3</option></select><button onclick="addToCart('Rajma Chawal',180,'q3')">Add</button></div>
+<div class="card"><img src="images/dosa.jpg"><h3>Masala Dosa</h3><p>₹120</p><select id="q4"><option>1</option><option>2</option><option>3</option></select><button onclick="addToCart('Masala Dosa',120,'q4')">Add</button></div>
+<div class="card"><img src="images/chole_bhature.jpg"><h3>Chole Bhature</h3><p>₹160</p><select id="q5"><option>1</option><option>2</option><option>3</option></select><button onclick="addToCart('Chole Bhature',160,'q5')">Add</button></div>
+
+<!-- FAST FOOD -->
+<div class="card"><img src="images/veg_burger.jpg"><h3>Veg Burger</h3><p>₹180</p><select id="q6"><option>1</option><option>2</option><option>3</option></select><button onclick="addToCart('Veg Burger',180,'q6')">Add</button></div>
+<div class="card"><img src="images/chicken_burger.jpg"><h3>Chicken Burger</h3><p>₹210</p><select id="q7"><option>1</option><option>2</option><option>3</option></select><button onclick="addToCart('Chicken Burger',210,'q7')">Add</button></div>
+<div class="card"><img src="images/french_fries.jpg"><h3>French Fries</h3><p>₹120</p><select id="q8"><option>1</option><option>2</option><option>3</option></select><button onclick="addToCart('French Fries',120,'q8')">Add</button></div>
+<div class="card"><img src="images/hot_dog.jpg"><h3>Hot Dog</h3><p>₹200</p><select id="q9"><option>1</option><option>2</option><option>3</option></select><button onclick="addToCart('Hot Dog',200,'q9')">Add</button></div>
+
+<!-- ITALIAN -->
+<div class="card"><img src="images/margherita_pizza.jpg"><h3>Margherita Pizza</h3><p>₹300</p><select id="q10"><option>1</option><option>2</option><option>3</option></select><button onclick="addToCart('Margherita Pizza',300,'q10')">Add</button></div>
+<div class="card"><img src="images/white_sauce_pasta.jpg"><h3>White Sauce Pasta</h3><p>₹260</p><select id="q11"><option>1</option><option>2</option><option>3</option></select><button onclick="addToCart('White Sauce Pasta',260,'q11')">Add</button></div>
+<div class="card"><img src="images/lasagna.jpg"><h3>Lasagna</h3><p>₹320</p><select id="q12"><option>1</option><option>2</option><option>3</option></select><button onclick="addToCart('Lasagna',320,'q12')">Add</button></div>
+
+<!-- MEXICAN -->
+<div class="card"><img src="images/veg_taco.jpg"><h3>Veg Taco</h3><p>₹190</p><select id="q13"><option>1</option><option>2</option><option>3</option></select><button onclick="addToCart('Veg Taco',190,'q13')">Add</button></div>
+<div class="card"><img src="images/burrito.jpg"><h3>Burrito</h3><p>₹280</p><select id="q14"><option>1</option><option>2</option><option>3</option></select><button onclick="addToCart('Burrito',280,'q14')">Add</button></div>
+<div class="card"><img src="images/nachos.jpg"><h3>Nachos</h3><p>₹210</p><select id="q15"><option>1</option><option>2</option><option>3</option></select><button onclick="addToCart('Nachos',210,'q15')">Add</button></div>
+
+<!-- HEALTHY -->
+<div class="card"><img src="images/caesar_salad.jpg"><h3>Caesar Salad</h3><p>₹170</p><select id="q16"><option>1</option><option>2</option><option>3</option></select><button onclick="addToCart('Caesar Salad',170,'q16')">Add</button></div>
+<div class="card"><img src="images/fruit_bowl.jpg"><h3>Fruit Bowl</h3><p>₹140</p><select id="q17"><option>1</option><option>2</option><option>3</option></select><button onclick="addToCart('Fruit Bowl',140,'q17')">Add</button></div>
+<div class="card"><img src="images/grilled_sandwich.jpg"><h3>Grilled Sandwich</h3><p>₹160</p><select id="q18"><option>1</option><option>2</option><option>3</option></select><button onclick="addToCart('Grilled Sandwich',160,'q18')">Add</button></div>
+
+<!-- DESSERTS -->
+<div class="card"><img src="images/chocolate_cake.jpg"><h3>Chocolate Cake</h3><p>₹220</p><select id="q19"><option>1</option><option>2</option><option>3</option></select><button onclick="addToCart('Chocolate Cake',220,'q19')">Add</button></div>
+<div class="card"><img src="images/ice_cream.jpg"><h3>Ice Cream Sundae</h3><p>₹150</p><select id="q20"><option>1</option><option>2</option><option>3</option></select><button onclick="addToCart('Ice Cream Sundae',150,'q20')">Add</button></div>
+<div class="card"><img src="images/gulab_jamun.jpg"><h3>Gulab Jamun</h3><p>₹120</p><select id="q21"><option>1</option><option>2</option><option>3</option></select><button onclick="addToCart('Gulab Jamun',120,'q21')">Add</button></div>
+
+<!-- BEVERAGES -->
+<div class="card"><img src="images/cold_coffee.jpg"><h3>Cold Coffee</h3><p>₹140</p><select id="q22"><option>1</option><option>2</option><option>3</option></select><button onclick="addToCart('Cold Coffee',140,'q22')">Add</button></div>
+<div class="card"><img src="images/lime_soda.jpg"><h3>Lime Soda</h3><p>₹100</p><select id="q23"><option>1</option><option>2</option><option>3</option></select><button onclick="addToCart('Lime Soda',100,'q23')">Add</button></div>
+<div class="card"><img src="images/milkshake.jpg"><h3>Milkshake</h3><p>₹160</p><select id="q24"><option>1</option><option>2</option><option>3</option></select><button onclick="addToCart('Milkshake',160,'q24')">Add</button></div>
+
+<!-- ASIAN -->
+<div class="card"><img src="images/hakka_noodles.jpg"><h3>Hakka Noodles</h3><p>₹200</p><select id="q25"><option>1</option><option>2</option><option>3</option></select><button onclick="addToCart('Hakka Noodles',200,'q25')">Add</button></div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
